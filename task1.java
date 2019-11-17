@@ -1,17 +1,15 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 public class task1 {
-
     public static void main(String[] args) throws IOException {
         BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите целое число");
+        System.out.println("Введите целое число:");
         String str=reader.readLine();
         Double n= Double.parseDouble(str);
         if (n%1!=0)
         {
-            System.out.println("Неправильно введено число");
+            System.out.println("Неправильно введено число. Попробйте снова.");
         }
         else {
             if (n % 2 == 0) {
@@ -30,14 +28,14 @@ public class task1 {
                 {
                     double k = n / i;
                     if (k % 1 == 0) {
-                        System.out.print("составное ");
+                        System.out.print("составное.");
                         l = true;
                     } else {
                         if (i < n - 1) {
                             i = i + 1;
                         } else {
                             l = true;
-                            System.out.print("простое ");
+                            System.out.print("простое.");
                         }
                     }
                 }

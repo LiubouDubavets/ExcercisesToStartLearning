@@ -1,17 +1,17 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 public class task3 {
-
     public static void main(String[] args) throws IOException {
         BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
-        String str=reader.readLine();
+        System.out.println("Введите предложение:");
+        //В задании не указано, будут ли знаки препинания в предложении.
+        // Если будет введено предложение со знаками препинания,
+        // то функция выдаст знаки препинания раньше отсортированного порядка слов.
+                String str=reader.readLine();
         String[] result=str.split(" ");
         int len=result.length;
         System.out.println("Количество слов "+ len);
-
         for (int i=0; i<len; i++) {
             char ch = result[i].charAt(0);
             int i1=(int)ch;

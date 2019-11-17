@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 public class task5
 {
     public static void main(String[] args) throws IOException {
-        System.out.print("Введите последовательность N:");
+        System.out.print("Введите длину последовательности N:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String str = reader.readLine();
         int n = Integer.parseInt(str);
@@ -15,7 +15,6 @@ public class task5
             if (num.equals(numrev)) {
                 System.out.print(num+" ");
             }
-
-        }
+        }System.out.print("числа-палиндромы последовательности");
     }
 }
